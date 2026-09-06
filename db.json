@@ -5,7 +5,7 @@
       "name": "iPhone 15 Pro",
       "basePrice": 69999,
       "mrp": 79900,
-      "image": "https://shorturl.at/CpfDn",
+      "image": "https://images.unsplash.com/photo-1695048132832-b41495f12eb4?w=500",
       "rating": 4.7,
       "reviewCount": 890,
       "variants": {
@@ -262,57 +262,6 @@
       ]
     },
     {
-      "id": "p6",
-      "name": "OnePlus 8t",
-      "basePrice": 34999,
-      "mrp": 49999,
-      "image": "https://shorturl.at/SsbBR",
-      "rating": 4.6,
-      "reviewCount": 530,
-      "variants": {
-        "storage": [
-          {
-            "label": "256GB",
-            "priceDelta": 0
-          },
-          {
-            "label": "512GB",
-            "priceDelta": 3000
-          }
-        ],
-        "color": [
-          {
-            "label": "Flowy Emerald",
-            "priceDelta": 0
-          },
-          {
-            "label": "Silky Black",
-            "priceDelta": 0
-          }
-        ]
-      },
-      "specs": {
-        "Display": "6.82\" LTPO AMOLED",
-        "Chip": "Snapdragon 8 Gen 3",
-        "Camera": "50MP Hasselblad Triple",
-        "Battery": "5400 mAh"
-      },
-      "emiPlans": [
-        {
-          "months": 3,
-          "interestRate": 0
-        },
-        {
-          "months": 6,
-          "interestRate": 0
-        },
-        {
-          "months": 12,
-          "interestRate": 0
-        }
-      ]
-    },
-    {
       "id": "p7",
       "name": "PlayStation 5 Slim 1TB",
       "basePrice": 44990,
@@ -358,7 +307,7 @@
       "name": "Daikin 1.5T Inverter Split AC",
       "basePrice": 37990,
       "mrp": 45990,
-      "image": "https://shorturl.at/GyEjO",
+      "image": "https://images.unsplash.com/photo-1631545806609-96f5f4c3b2f5?w=500",
       "rating": 4.7,
       "reviewCount": 530,
       "variants": {
@@ -445,92 +394,6 @@
         },
         {
           "months": 6,
-          "interestRate": 0
-        }
-      ]
-    },
-    {
-      "id": "p10",
-      "name": "Samsung 55\" QLED 4K TV",
-      "basePrice": 64990,
-      "mrp": 89990,
-      "image": "https://shorturl.at/g9Sq5",
-      "rating": 4.6,
-      "reviewCount": 780,
-      "variants": {
-        "storage": [
-          {
-            "label": "43\"",
-            "priceDelta": -20000
-          },
-          {
-            "label": "55\"",
-            "priceDelta": 0
-          },
-          {
-            "label": "65\"",
-            "priceDelta": 25000
-          }
-        ]
-      },
-      "specs": {
-        "Resolution": "4K UHD QLED",
-        "Refresh Rate": "120Hz",
-        "Smart Platform": "Tizen OS",
-        "Ports": "3x HDMI, 2x USB"
-      },
-      "emiPlans": [
-        {
-          "months": 6,
-          "interestRate": 0
-        },
-        {
-          "months": 9,
-          "interestRate": 0
-        },
-        {
-          "months": 12,
-          "interestRate": 0
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "name": "Canon EOS R10 Mirrorless Camera",
-      "basePrice": 84990,
-      "mrp": 94990,
-      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500",
-      "rating": 4.7,
-      "reviewCount": 312,
-      "variants": {
-        "color": [
-          {
-            "label": "Body Only",
-            "priceDelta": 0
-          },
-          {
-            "label": "With 18-45mm Lens Kit",
-            "priceDelta": 15000
-          }
-        ]
-      },
-      "specs": {
-        "Sensor": "24.2MP APS-C CMOS",
-        "Video": "4K UHD up to 30fps",
-        "Autofocus": "Dual Pixel CMOS AF II",
-        "Battery Life": "Approx. 450 shots"
-      },
-      "emiPlans": [
-        {
-          "months": 6,
-          "interestRate": 0
-        },
-        {
-          "months": 9,
-          "interestRate": 0
-        },
-        {
-          "months": 12,
           "interestRate": 0
         }
       ]
