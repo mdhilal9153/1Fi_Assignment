@@ -26,14 +26,14 @@ export default function ShopPage() {
 
       {/*TAB SWITCHER & SEARCH SECTION */}
       <section className="px-4 sm:px-8 pt-3.5 sm:pt-6 flex flex-col gap-2.5 sm:gap-3.5">
-        {/* Pill-shaped Segmented Tab Switcher */}
+
         <div className="w-full max-w-full sm:max-w-xl sm:mx-auto">
           <div
             role="tablist"
             aria-label="Shop categories"
             className="relative bg-[#ECE8F8] p-1 sm:p-1.5 rounded-full flex items-center shadow-inner select-none h-11 sm:h-12"
           >
-            {/* Sliding active pill indicator background */}
+
             <div
               className="absolute top-1 bottom-1 sm:top-1.5 sm:bottom-1.5 rounded-full bg-white shadow-[0_2px_6px_rgba(30,10,60,0.08)] transition-all duration-300 ease-watermelon"
               style={{
@@ -43,7 +43,7 @@ export default function ShopPage() {
               }}
             />
 
-            {/* Tab buttons */}
+
             {TABS.map((tab) => {
               const isActive = tab.id === activeTab;
               return (
@@ -64,7 +64,7 @@ export default function ShopPage() {
                     {tab.label}
                   </span>
 
-                  {/* Purple indicator line underneath active tab text */}
+
                   <div
                     className={`
                       w-5 sm:w-7 h-[2px] sm:h-[2.5px] rounded-full bg-brand-purple mt-1 sm:mt-1.5 transition-all duration-200 ease-watermelon
@@ -77,7 +77,7 @@ export default function ShopPage() {
           </div>
         </div>
 
-        {/* Pill-shaped Search Bar */}
+
         <div className="w-full max-w-full sm:max-w-xl sm:mx-auto">
           <div className="bg-white border border-[#E9E6F5] rounded-full px-3.5 sm:px-5 py-2 sm:py-2.5 flex items-center gap-2.5 shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition-all duration-200 focus-within:border-brand-purple focus-within:shadow-[0_0_0_3px_rgba(123,63,228,0.12)]">
             <FiSearch className="text-[#9D99AF] text-base sm:text-lg flex-shrink-0" />
@@ -93,13 +93,13 @@ export default function ShopPage() {
         </div>
       </section>
 
-      {/*TAB CONTENT SECTIONS */}
+
       <section className="px-4 sm:px-8 pt-4 sm:pt-6 flex-1 w-full max-w-full sm:max-w-xl sm:mx-auto">
         {activeTab === 'brands' && <TopBrands />}
         {activeTab === 'stores' && <NearbyStores />}
         {activeTab === 'marketplace' && <Marketplace />}
 
-        {/*FOOTER CARD */}
+
         <div className="pt-2 pb-6">
           <ShopFoot />
         </div>

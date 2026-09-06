@@ -16,7 +16,7 @@ export default function ShopFoot() {
 
         {/* Benefits List */}
         <div className="flex flex-col gap-4">
-          {/* Benefit 1: Mutual Funds Stay Invested */}
+
           <div className="flex items-start gap-3.5">
             <div className="w-9 h-9 rounded-full bg-[#EDE8FC] text-brand-purple flex items-center justify-center flex-shrink-0 mt-0.5">
               <FiTrendingUp className="text-lg stroke-[2.2]" />
@@ -31,7 +31,7 @@ export default function ShopFoot() {
             </div>
           </div>
 
-          {/* Benefit 2: Zero Paperwork & Instant Sanction */}
+
           <div className="flex items-start gap-3.5">
             <div className="w-9 h-9 rounded-full bg-[#EDE8FC] text-brand-purple flex items-center justify-center flex-shrink-0 mt-0.5">
               <IoSpeedometerOutline className="text-xl stroke-[2.2]" />

@@ -19,14 +19,14 @@ export default function MobileContainer({ children }) {
         sm:max-w-xl md:max-w-2xl lg:max-w-3xl
         xl:w-[420px] xl:min-h-0 xl:h-[860px] xl:max-h-[92vh] xl:rounded-[36px] xl:shadow-[0_25px_70px_rgba(0,0,0,0.6)] xl:border xl:border-purple-950/40"
       >
-        {/* Scrollable Page Body */}
+
         <div className={`flex-1 w-full overflow-y-auto no-scrollbar ${isDetailPage ? 'pb-24' : 'pb-24 md:pb-28'}`}>
           <main className="w-full">
             {children}
           </main>
         </div>
 
-        {/* Floating Bottom Navigation Bar (only displayed on top-level tabs) */}
+
         {!isDetailPage && (
           <div className="absolute bottom-3.5 md:bottom-5 inset-x-0 mx-auto w-[92%] sm:max-w-[480px] md:max-w-[540px] xl:max-w-[380px] z-50 pointer-events-none flex justify-center">
             <div className="w-full pointer-events-auto">

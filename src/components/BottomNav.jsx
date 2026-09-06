@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 
 export default function BottomNav() {
   return (
-    <nav 
+    <nav
       aria-label="Bottom Navigation"
       className="w-full bg-white/95 backdrop-blur-lg border border-[#EDE8F7] shadow-[0_8px_24px_rgba(30,10,60,0.1)] rounded-[26px] sm:rounded-[32px] px-1.5 sm:px-3 py-1 sm:py-2 flex items-center justify-between select-none"
     >
@@ -29,25 +29,25 @@ export default function BottomNav() {
             className={`
               relative flex-1 flex flex-col items-center justify-center py-1 sm:py-1.5 px-1 rounded-2xl cursor-pointer
               transition-all duration-200 ease-watermelon tap-bounce
-              ${isActive 
-                ? 'text-brand-purple font-semibold' 
+              ${isActive
+                ? 'text-brand-purple font-semibold'
                 : 'text-[#9A97AC] hover:text-[#5E5A74] font-medium'
               }
             `}
           >
-            {/* Top indicator bar matching 1Fi screenshot for active Shop tab */}
+
             {isActive && (
-              <div 
+              <div
                 className="absolute -top-1 sm:-top-1.5 w-5 sm:w-8 h-[2.5px] sm:h-[3px] rounded-full bg-brand-purple transition-all duration-300 ease-watermelon"
               />
             )}
 
-            {/* Icon */}
+
             <div className="relative flex items-center justify-center h-5 sm:h-6 w-5 sm:w-6 mb-0.5 sm:mb-1">
               <Icon className={`text-[19px] sm:text-[23px] transition-transform duration-200 ${isActive ? 'scale-105 stroke-[2.2]' : 'scale-100 stroke-[1.8]'}`} />
             </div>
 
-            {/* Label */}
+
             <span className={`text-[10px] sm:text-[12px] leading-tight tracking-tight truncate max-w-full ${isActive ? 'font-bold' : 'font-medium'}`}>
               {item.label}
             </span>

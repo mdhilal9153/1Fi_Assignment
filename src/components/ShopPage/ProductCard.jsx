@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-/**
- * Format number into Indian currency format (e.g. 69999 -> ₹69,999)
- */
+
 function formatCurrency(amount) {
   if (typeof amount !== 'number') return `₹${amount || 0}`;
   return '₹' + amount.toLocaleString('en-IN');
@@ -17,7 +15,7 @@ export default function ProductCard({ product }) {
       to={`/marketplace/${product.id}`}
       className="group flex flex-col bg-white rounded-[24px] p-3 border border-[#F0EDF8] shadow-[0_4px_16px_rgba(30,10,60,0.04)] hover:shadow-[0_8px_24px_rgba(123,63,228,0.12)] transition-all duration-200 tap-bounce"
     >
-      {/* Product Image Box - Edge-to-edge inside rounded frame matching reference */}
+
       <div className="w-full aspect-[4/3] rounded-[18px] overflow-hidden bg-[#EFEFF2] relative">
         <img
           src={product.image}

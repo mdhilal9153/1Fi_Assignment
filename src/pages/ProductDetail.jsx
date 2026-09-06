@@ -17,11 +17,11 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const { product, loading, error, refetch } = useProduct(productId);
 
-  // Variant state: { storage: label, color: label }
+
   const [selectedVariants, setSelectedVariants] = useState({});
-  // Selected EMI plan index
+
   const [selectedPlanIndex, setSelectedPlanIndex] = useState(0);
-  // Confirmation state
+
   const [showConfirmation, setShowConfirmation] = useState(false);
 
 
@@ -71,7 +71,7 @@ export default function ProductDetail() {
     ? calculateEMI(finalPrice, selectedPlan.months, selectedPlan.interestRate)
     : 0;
 
-  // 1. Loading State
+
   if (loading) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center p-6 animate-fade-in-up">
@@ -81,7 +81,7 @@ export default function ProductDetail() {
     );
   }
 
-  // 2. Error State
+
   if (error || !product) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center p-6 text-center animate-fade-in-up">
@@ -114,7 +114,7 @@ export default function ProductDetail() {
 
   return (
     <div className="w-full flex flex-col pb-32 animate-fade-in-up">
-      {/* Top Header with Back Arrow */}
+
       <header className="sticky top-0 z-30 bg-brand-bg/95 backdrop-blur-md px-4 sm:px-6 py-3.5 flex items-center justify-between border-b border-[#EDE8F7]">
         <button
           type="button"
@@ -130,23 +130,23 @@ export default function ProductDetail() {
         <div className="w-9" />
       </header>
 
-      {/* 1. Product Image Preview */}
+
       <ProductImage image={product.image} name={product.name} />
 
-      {/* 2. Product Name, Rating & Dynamic Price */}
+
       <ProductInfo product={product} finalPrice={finalPrice} />
 
-      {/* 3. Interactive Variant Selection */}
+
       <VariantSelection
         variants={product.variants}
         selectedVariants={selectedVariants}
         onSelectVariant={handleSelectVariant}
       />
 
-      {/* 4. Specifications Table */}
+
       <SpecificationsSection specs={product.specs} />
 
-      {/* 5. EMI Plan Selection */}
+
       <EmiPlansSection
         emiPlans={product.emiPlans}
         selectedPlanIndex={selectedPlanIndex}
@@ -154,13 +154,13 @@ export default function ProductDetail() {
         finalPrice={finalPrice}
       />
 
-      {/* 6. Sticky Bottom Action Bar */}
+
       <StickyCtaBar
         selectedMonthlyEMI={selectedMonthlyEMI}
         onProceed={() => setShowConfirmation(true)}
       />
 
-      {/* 7. Confirmation Modal */}
+
       <ConfirmationModal
         isOpen={showConfirmation}
         onClose={() => setShowConfirmation(false)}
