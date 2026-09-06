@@ -8,7 +8,7 @@ A responsive web implementation of the **1Fi Marketplace** section within the ex
 
 ## Live Links
 
-- **Live App**: https://1fi-assignment-gray.vercel.app/shop
+- **Live App**: https://1fi-assignment-git-main-hilals-projects-a68d263e.vercel.app/shop
 - **GitHub Repository**: https://github.com/mdhilal9153/1Fi_Assignment
 - **Mock API**: https://my-json-server.typicode.com/mdhilal9153/1Fi_Assignment/products
 
