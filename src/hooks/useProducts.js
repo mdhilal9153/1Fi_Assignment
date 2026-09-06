@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const API_BASE = 'http://localhost:3001/products';
+const API_BASE = 'https://my-json-server.typicode.com/mdhilal9153/1Fi_Assignment/products';
 
 /**
  * Custom hook to fetch all products from json-server.
